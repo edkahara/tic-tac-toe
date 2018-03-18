@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Free Code Camp Project called Tic Tac Toe">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT/JQUERY">
+    <meta name="author" content="Edward Njoroge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='script.js'></script>
+  </head>
+  <body>
+    <div class='text-center' id='main'>
+      <!--opening-->
+      <div class='row' id='enterGame'>
+        <h2 class='text-center welcome' id='welcomeMessage'>WELCOME TO TIC TAC TOE!</h2>
+        <button class='btn btn-success' id='enter'>ENTER</button>
+      </div>
+      <!--options-->
+      <div class='row' id='gameOptions'>
+        <div class='col-xs-12' id='modeSelect'>
+          <h2 class='text-center welcome' id='selectMode'>Select Mode</h2>
+          <button class='btn btn-primary' id='singlePlayer'>Single Player</button>
+          <button class='btn btn-primary' id='multiPlayer'>Multiplayer</button>
+        </div>
+        <div class='col-xs-12' id='playerSelect'>
+          <p class='welcome' id='singlePlayerSelect'>Choose either X or O</p>
+          <p class='welcome' id='multiPlayerSelect'>Player One: Choose either X or O</p>
+          <button class='btn btn-primary' id='X'>X</button>
+          <button class='btn btn-primary' id='O'>O</button>
+        </div>
+        <div class='col-xs-12' id='whoStarts'>
+          <p class='welcome'>who will start the game?</p>
+          <button class='btn btn-primary' id='you'>You</button>
+          <button class='btn btn-primary' id='computer'>Computer</button>
+          <button class='btn btn-primary' id='playerOne'>Player One</button>
+          <button class='btn btn-primary' id='playerTwo'>Player Two</button>
+        </div>
+      </div>
+      <!--board-->
+      <div class='row' id='board'>
+        <h2 class='text-center' id='result'></h2>
+        <h3 class='text-center' id='whosTurnSinglePlayer'></h3>
+        <h3 class='text-center' id='whosTurnMultiPlayer'></h3>
+        <div class='row1 row'>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='0'><h4 class = 'text-center' id = 'r1c1'></h4></a></div>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='1'><h4 class = 'text-center' id = 'r1c2'></h4></a></div>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='2'><h4 class = 'text-center' id = 'r1c3'></h4></a></div>
+        </div>
+        <div class='row2 row'>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='3'><h4 class = 'text-center' id = 'r2c1'></h4></a></div>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='4'><h4 class = 'text-center' id = 'r2c2'></h4></a></div>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='5'><h4 class = 'text-center' id = 'r2c3'></h4></a></div>
+        </div>
+        <div class='row3 row'>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='6'><h4 class = 'text-center' id = 'r3c1'></h4></a></div>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='7'><h4 class = 'text-center' id = 'r3c2'></h4></a></div>
+          <div class='col-xs-4'><a href='#' class='btn btn-primary' id='8'><h4 class = 'text-center' id = 'r3c3'></h4></a></div>
+        </div>
+      </div>
+      <!--other options-->
+      <div class='row boardOptions' id='playOptions'>
+        <button class='btn btn-primary' id='restartSinglePlayer'>Restart</button>
+        <button class='btn btn-primary' id='restartMultiPlayer'>Restart</button>
+        <button class='btn btn-primary' id='newGame'>New Game</button>
+        <button class='btn btn-primary' id='reset'>Reset</button>
+      </div>
+      <div class='row boardOptions' id='exitGame'>
+        <button class='btn btn-danger' id='exit'>EXIT</button>
+      </div>
+    </div>
+  </body>
+</html>
